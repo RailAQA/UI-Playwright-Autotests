@@ -4,7 +4,7 @@ from typing import Pattern
 from components.base_component import BaseComponent
 from elements.icon import Icon
 from elements.text import Text
-from elements.button_element import Button
+from elements.button import Button
 
 class SidebarListItemComponent(BaseComponent):
     def __init__(self, page: Page, identifier: str):
