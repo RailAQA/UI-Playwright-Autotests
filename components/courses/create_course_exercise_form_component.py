@@ -13,11 +13,11 @@ class CreateCourseExerciseFormComponent(BaseComponent):
         self.description_input = Input(page, 'create-course-exercise-form-description-{index}-input', 'Description')
         self.subtitle = Text(page, 'create-course-exercise-{index}-box-toolbar-subtitle-text', 'Subtitle')
 
-        self.delete_exercise_button = Button(page, 'create-course-exercise-{index}-box-toolbar-delete-exercise-button', 'Delete exercise')
+        self.delete_button = Button(page, 'create-course-exercise-{index}-box-toolbar-delete-exercise-button', 'Delete exercise')
         self.create_exercise_button = Button(page, 'create-course-exercises-box-toolbar-create-exercise-button', 'Create exercise')
 
     def delete_exercise_button(self, index: str):
-        self.delete_exercise_button.click(index=index)
+        self.delete_button.click(index=index)
 
     def fill_create_exercise_form(self, index: str, tittle: str, description: str):
         self.tittle_exercise_input.fill(tittle, index=index)
@@ -27,8 +27,7 @@ class CreateCourseExerciseFormComponent(BaseComponent):
         self.description_input.check_have_value(description)
 
     def click_create(self):
-        create_button = self.page.get_by_test_id('create-course-exercises-box-toolbar-create-exercise-button')
-        create_button.click()
+        self.create_exercise_button.click()
 
     def check_visible(self, index: str, tittle: str, description: str):
         self.tittle_exercise_input.check_visible(index=index)
