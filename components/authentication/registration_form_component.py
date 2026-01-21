@@ -30,7 +30,7 @@ class RegistrationFormComponent(BaseComponent):
         self.password.fill(passwrd)
 
         self.regis_button.click()
-        self.page.url(re.compile(r'.*/#/dashboard'))
+        self.page.check_current_url(re.compile(r'.*/#/dashboard'))
 
     def check_visible(self):
         self.title.check_have_text('UI Course')
@@ -42,4 +42,4 @@ class RegistrationFormComponent(BaseComponent):
 
     def login(self):
         self.login_button.click()
-        self.page.check_current_url(r'.*#/auth/login')
+        self.check_current_url(r'.*#/auth/login')

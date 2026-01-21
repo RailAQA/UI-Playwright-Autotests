@@ -1,4 +1,4 @@
-from playwright.sync_api import Page, expect
+from playwright.sync_api import Page
 import re
 
 from components.base_component import BaseComponent
@@ -26,7 +26,7 @@ class LoginFormComponent(BaseComponent):
         self.password.fill(passwrd)
 
         self.login_button.click()
-        self.page.check_current_url(re.compile(r'.*/#/dashboard'))
+        self.check_current_url(re.compile(r'.*/#/dashboard'))
 
     def check_visible(self):
         self.title.check_have_text('UI Course')
@@ -38,4 +38,4 @@ class LoginFormComponent(BaseComponent):
 
     def registration(self):
         self.registation_button.click()
-        self.page.check_current_url(re.compile(r'.*/auth/registration'))
+        self.check_current_url(re.compile(r'.*/auth/registration'))
