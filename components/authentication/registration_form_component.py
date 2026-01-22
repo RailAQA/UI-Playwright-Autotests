@@ -19,7 +19,7 @@ class RegistrationFormComponent(BaseComponent):
         self.regis_button = Button(page, 'registration-page-registration-button', 'Registration')
         self.login_button = Button(page, 'registration-page-login-link', 'Login')
 
-    def registration(self, mail:str, name: str, passwrd: str):
+    def fill(self, mail:str, name: str, passwrd: str):
         self.email.fill(mail)
         self.email.check_have_value(mail)
 
@@ -30,7 +30,7 @@ class RegistrationFormComponent(BaseComponent):
         self.password.fill(passwrd)
 
         self.regis_button.click()
-        self.page.check_current_url(re.compile(r'.*/#/dashboard'))
+        self.check_current_url(re.compile(r'.*/#/dashboard'))
 
     def check_visible(self):
         self.title.check_have_text('UI Course')
