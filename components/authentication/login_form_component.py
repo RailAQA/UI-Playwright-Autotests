@@ -18,15 +18,15 @@ class LoginFormComponent(BaseComponent):
         self.login_button = Button(page, 'login-page-login-button', 'Auth')
         self.registation_button = Button(page, 'login-page-registration-link' , 'Registation')
 
-    def login(self, username: str, passwrd: str):
-        self.username.fill(username)
-        self.username.check_have_value(username)
+    def fill(self, email: str, passwrd: str):
+        self.username.fill(email)
+        self.username.check_have_value(email)
 
         self.password.fill(passwrd)
-        self.password.fill(passwrd)
+        self.password.check_have_value(passwrd)
 
-        self.login_button.click()
-        self.check_current_url(re.compile(r'.*/#/dashboard'))
+        #self.login_button.click()
+        #self.check_current_url(re.compile(r'.*/#/dashboard'))
 
     def check_visible(self):
         self.title.check_have_text('UI Course')

@@ -27,10 +27,10 @@ class RegistrationFormComponent(BaseComponent):
         self.username.check_have_value(name)
 
         self.password.fill(passwrd)
-        self.password.fill(passwrd)
+        self.password.check_have_value(passwrd)
 
-        self.regis_button.click()
-        self.check_current_url(re.compile(r'.*/#/dashboard'))
+        #self.regis_button.click()
+        #self.check_current_url(re.compile(r'.*/#/dashboard'))
 
     def check_visible(self):
         self.title.check_have_text('UI Course')
