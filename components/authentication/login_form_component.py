@@ -25,9 +25,6 @@ class LoginFormComponent(BaseComponent):
         self.password.fill(passwrd)
         self.password.check_have_value(passwrd)
 
-        #self.login_button.click()
-        #self.check_current_url(re.compile(r'.*/#/dashboard'))
-
     def check_visible(self):
         self.title.check_have_text('UI Course')
 
