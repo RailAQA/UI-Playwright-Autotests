@@ -19,7 +19,7 @@ class CreateCourseExerciseFormComponent(BaseComponent):
     def delete_exercise_button(self, index: str):
         self.delete_button.click(index=index)
 
-    def fill_create_exercise_form(self, index: str, tittle: str, description: str):
+    def fill(self, index: str, tittle: str, description: str):
         self.tittle_exercise_input.fill(tittle, index=index)
         self.tittle_exercise_input.check_have_value(tittle, index=index)
 

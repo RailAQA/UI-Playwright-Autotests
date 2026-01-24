@@ -10,12 +10,12 @@ class CourseViewComponent(BaseComponent):
     def __init__(self, page):
         super().__init__(page)
 
-        self.menu = CourseViewComponent(page)
+        self.menu_button = CourseViewMenuComponent(page)
 
         self.tittle = Text(page, 'course-widget-title-text', 'Tittle')
         self.image = Image(page, 'course-preview-image', 'Image')
         self.max_score = Text(page, 'course-max-score-info-row-view-text', 'Max_score')
-        self.min_score = Text(page, 'course-estimated-time-info-row-view-text', 'Min_score')
+        self.min_score = Text(page, 'course-min-score-info-row-view-text', 'Min_score')
         self.estimated_time = Text(page, 'course-estimated-time-info-row-view-text', 'Estimated_time')
 
     def check_visible(self,

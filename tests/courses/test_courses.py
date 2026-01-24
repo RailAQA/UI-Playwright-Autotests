@@ -1,6 +1,7 @@
 import pytest
 
 from pages.courses.courses_page import CoursesPage
+from pages.courses.create_course_page import CreateCoursesPage
 
 
 class TestCourses:
@@ -12,3 +13,42 @@ class TestCourses:
         courses_page_with_state.navbar.check_visible('username')
         courses_page_with_state.sidebar.check_visible()
         courses_page_with_state.sidebar.check_visible()
+
+    def test_create_course(
+            self, 
+            courses_page_with_state: CoursesPage, 
+            create_courses_page_with_state: CreateCoursesPage
+            ):
+        create_courses_page_with_state.visit(
+            'https://nikita-filonov.github.io/qa-automation-engineer-ui-course/#/courses/create'
+            )
+        create_courses_page_with_state.navbar.check_visible('username')
+        create_courses_page_with_state.sidebar.check_visible()
+        create_courses_page_with_state.image_upload_widget.check_visible()
+        create_courses_page_with_state.create_course_toolbar.check_visible(is_image_uploaded=False)
+        create_courses_page_with_state.check_visible_image_empty_view()
+        create_courses_page_with_state.exercise_toolbar.check_visible()
+        create_courses_page_with_state.create_course_form.check_visible()
+        create_courses_page_with_state.exercise_empty_view.check_visible(tittle='There is no exercises',
+                                                                         description='Click on "Create exercise" button to create new exercise'
+                                                                         )
+        
+        create_courses_page_with_state.image_upload_widget.upload_preview_image(file='./testdata/files/main.jpg')
+        create_courses_page_with_state.image_upload_widget.check_visible(is_image_uploaded=True)
+        create_courses_page_with_state.create_course_form.fill(
+            title='Playwright', 
+            estimated_time='2 days', 
+            description='Здесь могла быть твоя реклама', 
+            max_score='40', 
+            min_score='20'
+            )
+        create_courses_page_with_state.create_course_toolbar.click_create_course_button()
+
+        courses_page_with_state.toolbar.check_visible()
+        courses_page_with_state.course_view.check_visible(
+            index=0,
+            tittle='Playwright',
+            max_score='40',
+            min_score='20',
+            estimated_time='2 days'
+        )

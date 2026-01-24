@@ -6,15 +6,14 @@ from components.courses.toolbar_list_component import ToolbarListComponent
 from elements.text import Text
 from elements.button import Button
 
-class CoursesListToolbarComponent(BaseComponent):
+class ExercisetToolbarComponent(BaseComponent):
     def __init__(self, page: Page):
         super().__init__(page)
 
-        self.toolbar = ToolbarListComponent(page, 'courses-list', 'course')
+        self.toolbar = ToolbarListComponent(page, 'create-course-exercises-box', 'exercise')
     
-    def click_create_course_button(self):
+    def click_create_exercise_button(self):
         self.toolbar.click_create_button()
-        self.check_current_url(re.compile(r'.*/#/courses/create'))
 
     def check_visible(self):
-        self.toolbar.check_visible('Courses')
+        self.toolbar.check_visible('Exercises')
