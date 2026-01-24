@@ -11,7 +11,7 @@ class ChartViewComponent(BaseComponent):
         self.tittle = Text(page, f'{identifier}-widget-title-text', 'Tittle')
         self.chart_view = Chart(page, f'{identifier}-{chart_type}-chart', 'Chart')
 
-    def check_visible(self, title):
+    def check_visible(self, title: str):
         self.tittle.check_visible()
         self.tittle.check_have_text(title)
 
