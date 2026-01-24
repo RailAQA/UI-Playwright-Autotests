@@ -6,7 +6,9 @@ from pages.authentification.login_page import LoginPage
 from pages.dashboard.dashboard_page import DashboardPage
 
 
-class TestAuthorization:
+@pytest.mark.regression
+@pytest.mark.registration
+class TestRegistration:
     def test_succesful_registration(
             self, 
             registration_page: RegistrationPage, 

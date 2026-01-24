@@ -3,6 +3,9 @@ from playwright.sync_api import Page, Playwright
 
 from pages.authentification.login_page import LoginPage
 
+
+@pytest.mark.regression
+@pytest.mark.authorization
 class TestLogin:
     @pytest.mark.parametrize('email, password', 
                              [

@@ -2,6 +2,7 @@ from playwright.sync_api import Page
 
 from pages.base_page import BasePage
 from components.courses.courses_list_toolbar_component import CoursesListToolbarComponent
+from components.courses.course_view_menu_component import CourseViewMenuComponent
 from components.courses.course_view_component import CourseViewComponent
 from components.views.empty_view_component import EmptyViewComponent
 from components.navigation.navbar_component import NavbarComponent
@@ -16,6 +17,7 @@ class CoursesPage(BasePage):
         self.course_view = CourseViewComponent(page)
 
         self.toolbar = CoursesListToolbarComponent(page)
+        self.menu = CourseViewMenuComponent(page)
         self.navbar = NavbarComponent(page)
         self.sidebar = SidebarComponent(page)
 

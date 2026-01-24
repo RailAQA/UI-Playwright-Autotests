@@ -2,6 +2,9 @@ import pytest
 
 from pages.dashboard.dashboard_page import DashboardPage
 
+
+@pytest.mark.regression
+@pytest.mark.dashboard
 class TestDashboard:
     def test_dashboard_displaying(self, dashboard_page_with_state: DashboardPage):
         dashboard_page_with_state.visit(

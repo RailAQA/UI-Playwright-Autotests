@@ -4,6 +4,8 @@ from pages.courses.courses_page import CoursesPage
 from pages.courses.create_course_page import CreateCoursesPage
 
 
+@pytest.mark.regression
+@pytest.mark.courses
 class TestCourses:
     def test_empty_courses_list(self, courses_page_with_state : CoursesPage):
         courses_page_with_state.visit(
@@ -28,7 +30,13 @@ class TestCourses:
         create_courses_page_with_state.create_course_toolbar.check_visible(is_image_uploaded=False)
         create_courses_page_with_state.check_visible_image_empty_view()
         create_courses_page_with_state.exercise_toolbar.check_visible()
-        create_courses_page_with_state.create_course_form.check_visible()
+        create_courses_page_with_state.create_course_form.check_visible(
+            title='', 
+            estimated_time='', 
+            description='', 
+            max_score='0', 
+            min_score='0'
+            )
         create_courses_page_with_state.exercise_empty_view.check_visible(tittle='There is no exercises',
                                                                          description='Click on "Create exercise" button to create new exercise'
                                                                          )
@@ -52,3 +60,45 @@ class TestCourses:
             min_score='20',
             estimated_time='2 days'
         )
+
+    def test_edit_course(self, courses_page_with_state: CoursesPage, create_courses_page_with_state: CreateCoursesPage):
+        create_courses_page_with_state.visit(
+            'https://nikita-filonov.github.io/qa-automation-engineer-ui-course/#/courses/create'
+            )
+        
+        create_courses_page_with_state.image_upload_widget.upload_preview_image(file='./testdata/files/main.jpg')
+        create_courses_page_with_state.create_course_form.fill(
+            title='Лучший тайтл', 
+            estimated_time='2 weeks', 
+            description='По щучьему велению, по моему хотению', 
+            max_score='25', 
+            min_score='5'
+            )
+        create_courses_page_with_state.create_course_toolbar.click_create_course_button()
+
+        courses_page_with_state.menu.click_edit(index=0)
+        
+        create_courses_page_with_state.create_course_form.check_visible(
+            title='Лучший тайтл', 
+            estimated_time='2 weeks', 
+            description='По щучьему велению, по моему хотению', 
+            max_score='25', 
+            min_score='5')
+        create_courses_page_with_state.create_course_form.fill(
+            title='Новый тайтл', 
+            estimated_time='1 day', 
+            description='лень придумывать', 
+            max_score='100', 
+            min_score='40'
+            )
+        create_courses_page_with_state.create_course_toolbar.click_create_course_button()
+
+        courses_page_with_state.course_view.check_visible(
+            index=0, 
+            tittle='Новый тайтл', 
+            estimated_time='1 day', 
+            max_score='100', 
+            min_score='40'
+            )
+        
+        
