@@ -15,8 +15,11 @@ from allure_commons.types import Severity
 @pytest.mark.authorization
 @allure.tag(AllureTag.REGRESSION, AllureTag.AUTHORIZATION)
 @allure.epic(AllureEpic.LMS)
+@allure.parent_suite(AllureEpic.LMS)
 @allure.feature(AllureFeature.AUTHENTIFICATION)
+@allure.suite(AllureFeature.AUTHENTIFICATION)
 @allure.story(AllureStory.AUTHERIZATION)
+@allure.sub_suite(AllureStory.AUTHERIZATION)
 class TestLogin:
     @allure.tag('USER_LOGIN')
     @allure.severity(Severity.BLOCKER)

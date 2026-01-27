@@ -12,8 +12,11 @@ from tools.allure.stories import AllureStory
 @pytest.mark.dashboard
 @allure.tag(AllureTag.REGRESSION, AllureTag.DASHBOARD)
 @allure.epic(AllureEpic.LMS)
+@allure.parent_suite(AllureEpic.LMS)
 @allure.feature(AllureFeature.DASHBOARD)
+@allure.suite(AllureFeature.DASHBOARD)
 @allure.story(AllureStory.DASHBOARD)
+@allure.sub_suite(AllureStory.DASHBOARD)
 class TestDashboard:
     @allure.title('Check displaying of dashboard page')
     def test_dashboard_displaying(self, dashboard_page_with_state: DashboardPage):

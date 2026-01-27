@@ -14,8 +14,11 @@ from allure_commons.types import Severity
 @pytest.mark.registration
 @allure.tag(AllureTag.REGRESSION, AllureTag.REGISTRATION)
 @allure.epic(AllureEpic.LMS)
+@allure.parent_suite(AllureEpic.LMS)
 @allure.feature(AllureFeature.AUTHENTIFICATION)
+@allure.suite(AllureFeature.AUTHENTIFICATION)
 @allure.story(AllureStory.REGISTRATION)
+@allure.sub_suite(AllureStory.REGISTRATION)
 class TestRegistration:
     @allure.tag(AllureTag.USER_REGISTRATION)
     @allure.severity(Severity.BLOCKER)
