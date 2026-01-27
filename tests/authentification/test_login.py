@@ -8,6 +8,7 @@ from pages.dashboard.dashboard_page import DashboardPage
 from tools.allure.epics import AllureEpic
 from tools.allure.features import AllureFeature
 from tools.allure.stories import AllureStory
+from allure_commons.types import Severity
 
 
 @pytest.mark.regression
@@ -18,6 +19,7 @@ from tools.allure.stories import AllureStory
 @allure.story(AllureStory.AUTHERIZATION)
 class TestLogin:
     @allure.tag('USER_LOGIN')
+    @allure.severity(Severity.BLOCKER)
     @allure.title('User login with correct email and password')
     def test_successful_authorization(
             self, 
@@ -55,6 +57,7 @@ class TestLogin:
                              ]
                              )
     @allure.tag(AllureTag.USER_LOGIN)
+    @allure.severity(Severity.CRITICAL)
     @allure.title('User login with wrong email or password')
     def test_wrong_email_or_password_authorization(self, login_page: LoginPage, email: str, password: str):
         login_page.visit('https://nikita-filonov.github.io/qa-automation-engineer-ui-course/#/auth/login')

@@ -7,6 +7,7 @@ from pages.dashboard.dashboard_page import DashboardPage
 from tools.allure.epics import AllureEpic
 from tools.allure.features import AllureFeature
 from tools.allure.stories import AllureStory
+from allure_commons.types import Severity
 
 
 @pytest.mark.regression
@@ -17,6 +18,7 @@ from tools.allure.stories import AllureStory
 @allure.story(AllureStory.REGISTRATION)
 class TestRegistration:
     @allure.tag(AllureTag.USER_REGISTRATION)
+    @allure.severity(Severity.BLOCKER)
     @allure.title('User registration with correct email and password')
     def test_succesful_registration(
             self, 
