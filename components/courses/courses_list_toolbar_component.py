@@ -3,8 +3,7 @@ import re
 
 from components.base_component import BaseComponent
 from components.courses.toolbar_list_component import ToolbarListComponent
-from elements.text import Text
-from elements.button import Button
+
 
 class CoursesListToolbarComponent(BaseComponent):
     def __init__(self, page: Page):

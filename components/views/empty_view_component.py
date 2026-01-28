@@ -1,4 +1,5 @@
 from playwright.sync_api import Page, expect
+import allure
 
 from components.base_component import BaseComponent
 from elements.text import Text
@@ -12,6 +13,7 @@ class EmptyViewComponent(BaseComponent):
         self.tittle = Text(page, f'{identifier}-empty-view-title-text', 'Tittle')
         self.description = Text(page, f'{identifier}-empty-view-description-text', 'Description')
 
+    @allure.step('Check visible empty view {tittle}')
     def check_visible(self, tittle: str, description: str):
         self.icon.check_visible()
 
