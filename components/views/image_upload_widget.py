@@ -16,12 +16,12 @@ class ImageUploadWidgetComponent(BaseComponent):
 
         self.preview_image = Image(page, f'{identifier}-image-upload-widget-preview-image', 'Image')
 
-        self.image_upload_info_icon = Icon(page, f'{identifier}-image-upload-widget-info-icon', 'Icon')
-        self.image_upload_info_tittle = Text(page, f'{identifier}-image-upload-widget-info-title-text', 'Tittle')
-        self.image_upload_info_description = Text(page, f'{identifier}-image-upload-widget-info-description-text', 'Description')
+        self.image_upload_info_icon = Icon(page, f'{identifier}-image-upload-widget-info-icon', 'Icon image')
+        self.image_upload_info_tittle = Text(page, f'{identifier}-image-upload-widget-info-title-text', 'Tittle image')
+        self.image_upload_info_description = Text(page, f'{identifier}-image-upload-widget-info-description-text', 'Description image')
 
         self.upload_image_button = Button(page, f'{identifier}-image-upload-widget-upload-button', 'Upload image')
-        self.upload_image_input = FileInput(page, f'{identifier}-image-upload-widget-input', 'Upload input')
+        self.upload_image_input = FileInput(page, f'{identifier}-image-upload-widget-input', 'Upload image')
         self.remove_button = Button(page, f'{identifier}-image-upload-widget-remove-button', 'Delete image')
 
     def click_remove_image(self):

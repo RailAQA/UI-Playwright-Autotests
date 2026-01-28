@@ -50,5 +50,3 @@ class TestRegistration:
         #dashboard_page.navbar.check_visible('Rail')
         #dashboard_page.sidebar.check_visible()
         #dashboard_page.dashboard_toolbar_view.check_visible()
-
-    
