@@ -7,9 +7,9 @@ from tools.routes import AppRoute
 
 from pages.authentification.registration_page import RegistrationPage
 
-@pytest.fixture()
+@pytest.fixture(params=settings.browsers)
 def chromium_page(request: SubRequest, playwright: Playwright) -> Page:
-    yield from initialize_playwright_page(playwright, test_name=request.node.name)
+    yield from initialize_playwright_page(playwright, test_name=request.node.name, browser_type=request.param)
 
 @pytest.fixture(scope='session')
 def initialize_browser_state(playwright: Playwright):
@@ -27,10 +27,11 @@ def initialize_browser_state(playwright: Playwright):
 
     context.storage_state(path=settings.browser_state_file)
 
-@pytest.fixture
-def chromium_page_with_state(request: SubRequest, initialize_browser_state, playwright: Playwright) -> Page:
+@pytest.fixture(params=settings.browsers)
+def chromium_page_with_state(initialize_browser_state, request: SubRequest, playwright: Playwright) -> Page:
     yield from initialize_playwright_page(
         playwright, 
         test_name=request.node.name, 
-        storage_state=settings.browser_state_file
+        storage_state=settings.browser_state_file,
+        browser_type=request.param
         )
