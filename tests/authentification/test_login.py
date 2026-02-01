@@ -9,6 +9,7 @@ from tools.allure.epics import AllureEpic
 from tools.allure.features import AllureFeature
 from tools.allure.stories import AllureStory
 from allure_commons.types import Severity
+from tools.routes import AppRoute
 
 
 @pytest.mark.regression
@@ -30,7 +31,7 @@ class TestLogin:
             dashboard_page: DashboardPage,
             login_page: LoginPage
             ):
-        registration_page.visit('https://nikita-filonov.github.io/qa-automation-engineer-ui-course/#/auth/registration')
+        registration_page.visit(AppRoute.REGISTRATION)
         registration_page.registration_form.fill(
             mail='user_mail@gmail.com', 
             name='username', 
@@ -63,7 +64,7 @@ class TestLogin:
     @allure.severity(Severity.CRITICAL)
     @allure.title('User login with wrong email or password')
     def test_wrong_email_or_password_authorization(self, login_page: LoginPage, email: str, password: str):
-        login_page.visit('https://nikita-filonov.github.io/qa-automation-engineer-ui-course/#/auth/login')
+        login_page.visit(AppRoute.LOGIN)
         login_page.login_form.fill(email, password)
         login_page.login_button.click()
         login_page.check_visible_wrong_email_or_password()
@@ -75,9 +76,7 @@ class TestLogin:
             login_page: LoginPage,
             registration_page: RegistrationPage
     ):
-        login_page.visit(
-            'https://nikita-filonov.github.io/qa-automation-engineer-ui-course/#/auth/login'
-            )
+        login_page.visit(AppRoute.LOGIN)
         login_page.click_registration_link()
         
         registration_page.registration_form.check_visible()

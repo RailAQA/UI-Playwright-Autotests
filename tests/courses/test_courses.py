@@ -8,6 +8,8 @@ from tools.allure.epics import AllureEpic
 from tools.allure.features import AllureFeature
 from tools.allure.stories import AllureStory
 from allure_commons.types import Severity
+from tools.routes import AppRoute
+from config import settings
 
 
 @pytest.mark.regression
@@ -24,10 +26,10 @@ class TestCourses:
     @allure.severity(Severity.NORMAL)
     def test_empty_courses_list(self, courses_page_with_state : CoursesPage):
         courses_page_with_state.visit(
-            'https://nikita-filonov.github.io/qa-automation-engineer-ui-course/#/courses'
+            AppRoute.COURSES_LIST
             )
         courses_page_with_state.check_visible_empty_view()
-        courses_page_with_state.navbar.check_visible('username')
+        courses_page_with_state.navbar.check_visible(settings.test_user.username)
         courses_page_with_state.sidebar.check_visible()
         courses_page_with_state.sidebar.check_visible()
 
@@ -38,10 +40,8 @@ class TestCourses:
             courses_page_with_state: CoursesPage, 
             create_courses_page_with_state: CreateCoursesPage
             ):
-        create_courses_page_with_state.visit(
-            'https://nikita-filonov.github.io/qa-automation-engineer-ui-course/#/courses/create'
-            )
-        create_courses_page_with_state.navbar.check_visible('username')
+        create_courses_page_with_state.visit(AppRoute.CREATE_COURSE)
+        create_courses_page_with_state.navbar.check_visible(settings.test_user.username)
         create_courses_page_with_state.sidebar.check_visible()
         create_courses_page_with_state.image_upload_widget.check_visible()
         create_courses_page_with_state.create_course_toolbar.check_visible(is_image_uploaded=False)
@@ -82,9 +82,7 @@ class TestCourses:
     @allure.title('User edit course')
     @allure.severity(Severity.NORMAL)
     def test_edit_course(self, courses_page_with_state: CoursesPage, create_courses_page_with_state: CreateCoursesPage):
-        create_courses_page_with_state.visit(
-            'https://nikita-filonov.github.io/qa-automation-engineer-ui-course/#/courses/create'
-            )
+        create_courses_page_with_state.visit(AppRoute.CREATE_COURSE)
         
         create_courses_page_with_state.image_upload_widget.upload_preview_image(file='./testdata/files/main.jpg')
         create_courses_page_with_state.create_course_form.fill(
