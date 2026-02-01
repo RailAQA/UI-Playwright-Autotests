@@ -1,5 +1,5 @@
-from pydantic_settings import BaseSettings
-from pydantic import EmailStr, FilePath, HttpUrl, DirectoryPath
+from pydantic_settings import BaseSettings, SettingsConfigDict
+from pydantic import EmailStr, FilePath, HttpUrl, DirectoryPath, BaseModel
 from enum import Enum
 
 class Browser(str, Enum):
@@ -7,15 +7,21 @@ class Browser(str, Enum):
     CHROMIUM = 'chromium'
     FIREFOX = 'firefox'
 
-class TestUser(BaseSettings):
+class TestUser(BaseModel):
     email: EmailStr
     username: str
     password: str
 
-class TestData(BaseSettings):
+class TestData(BaseModel):
     image_png_file: FilePath
 
 class Settings(BaseSettings):
+    model_config = SettingsConfigDict(
+        env_file='.env', 
+        env_file_encoding='UTF-8',
+        env_nested_delimiter='.'
+        )
+    
     app_url: HttpUrl
     headless: bool
     browsers: list[Browser]
