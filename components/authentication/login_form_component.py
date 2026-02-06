@@ -1,0 +1,41 @@
+from playwright.sync_api import Page
+import allure
+import re
+
+from components.base_component import BaseComponent
+from elements.input import Input
+from elements.button import Button
+from elements.text import Text
+
+class LoginFormComponent(BaseComponent):
+    def __init__(self, page: Page):
+        super().__init__(page)
+
+        self.title = Text(page, 'authentication-ui-course-title-text', 'Tittle')
+
+        self.username = Input(page, 'login-form-email-input', 'Login input')
+        self.password = Input(page, 'login-form-password-input', 'Password input')
+
+        self.login_button = Button(page, 'login-page-login-button', 'Auth')
+        self.registation_button = Button(page, 'login-page-registration-link' , 'Registation')
+
+    @allure.step('Fill login form')
+    def fill(self, email: str, passwrd: str):
+        self.username.fill(email)
+        self.username.check_have_value(email)
+
+        self.password.fill(passwrd)
+        self.password.check_have_value(passwrd)
+
+    @allure.step('Check visible login form')
+    def check_visible(self):
+        self.title.check_have_text('UI Course')
+
+        self.username.check_visible()
+        self.password.check_visible()
+        self.login_button.check_visible()
+        self.registation_button.check_visible()
+
+    def registration(self):
+        self.registation_button.click()
+        self.check_current_url(re.compile(r'.*/auth/registration'))
