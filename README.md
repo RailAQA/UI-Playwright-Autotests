@@ -1,1 +1,0 @@
-# UI-Playwright-Autotests
