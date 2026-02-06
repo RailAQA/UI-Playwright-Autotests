@@ -213,3 +213,6 @@ tracing
 
 # allure
 allure_results
+
+# some files
+.DS_Store
