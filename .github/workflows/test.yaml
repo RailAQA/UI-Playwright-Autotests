@@ -10,7 +10,7 @@ on:
 
 jobs:
   run_tests:
-    runs_on: ubuntu-latest
+    runs-on: ubuntu-latest
   
   steps:
   - name: Check out repository
@@ -40,7 +40,7 @@ jobs:
       path: gh-pages
 
   - name: Allure Report action fro marketplace
-    uses: simple-elf/allure-report-action@1.7
+    uses: simple-elf/allure-report-action@v1.13
     if: always()
     continue-on-error: true
     with:
