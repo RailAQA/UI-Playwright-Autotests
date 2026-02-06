@@ -24,7 +24,7 @@ jobs:
       - name: instal requirements
         run: |
           pip install --upgrade pip
-          pip instal -r requirements.txt
+          pip install -r requirements.txt
           playwright install --with-deps
 
       - name: Run playwright test and generate Allure results
