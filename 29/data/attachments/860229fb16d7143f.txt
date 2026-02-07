@@ -1,0 +1,80 @@
+2026-02-07 12:04:32,539 | BASE_PAGE | INFO | Opening the url "./#/auth/registration"
+2026-02-07 12:04:34,178 | BASE_ELEMENT | INFO | Getting locator with data-testid=registration-form-email-input at index 0
+2026-02-07 12:04:34,178 | INPUT | INFO | Fill 'input' 'Email' to value 'user_mail@gmail.com'
+2026-02-07 12:04:34,257 | BASE_ELEMENT | INFO | Getting locator with data-testid=registration-form-email-input at index 0
+2026-02-07 12:04:34,257 | INPUT | INFO | Checking that 'input' 'Email' has value 'user_mail@gmail.com'
+2026-02-07 12:04:34,270 | BASE_ELEMENT | INFO | Getting locator with data-testid=registration-form-username-input at index 0
+2026-02-07 12:04:34,270 | INPUT | INFO | Fill 'input' 'Login input' to value 'username'
+2026-02-07 12:04:34,305 | BASE_ELEMENT | INFO | Getting locator with data-testid=registration-form-username-input at index 0
+2026-02-07 12:04:34,305 | INPUT | INFO | Checking that 'input' 'Login input' has value 'username'
+2026-02-07 12:04:34,319 | BASE_ELEMENT | INFO | Getting locator with data-testid=registration-form-password-input at index 0
+2026-02-07 12:04:34,319 | INPUT | INFO | Fill 'input' 'Password input' to value 'password123'
+2026-02-07 12:04:34,385 | BASE_ELEMENT | INFO | Getting locator with data-testid=registration-form-password-input at index 0
+2026-02-07 12:04:34,385 | INPUT | INFO | Checking that 'input' 'Password input' has value 'password123'
+2026-02-07 12:04:34,395 | BASE_ELEMENT | INFO | Getting locator with data-testid=registration-page-registration-button at index 0
+2026-02-07 12:04:34,396 | BASE_ELEMENT | INFO | Clicking button 'Registration'
+2026-02-07 12:04:34,508 | BASE_COMPONENT | INFO | Checking that current url mathes pattern ".*/#/dashboard"
+2026-02-07 12:04:34,568 | BASE_ELEMENT | INFO | Getting locator with data-testid=dashboard-toolbar-title-text at index 0
+2026-02-07 12:04:34,569 | BASE_ELEMENT | INFO | Checking  that text 'Tittle is visible'
+2026-02-07 12:04:34,755 | BASE_ELEMENT | INFO | Getting locator with data-testid=dashboard-toolbar-title-text at index 0
+2026-02-07 12:04:34,755 | BASE_ELEMENT | INFO | Checking  that text 'Tittle' has text 'Dashboard'
+2026-02-07 12:04:34,779 | BASE_ELEMENT | INFO | Getting locator with data-testid=navigation-navbar-app-title-text at index 0
+2026-02-07 12:04:34,779 | BASE_ELEMENT | INFO | Checking  that text 'Navbar tittle is visible'
+2026-02-07 12:04:34,808 | BASE_ELEMENT | INFO | Getting locator with data-testid=navigation-navbar-app-title-text at index 0
+2026-02-07 12:04:34,808 | BASE_ELEMENT | INFO | Checking  that text 'Navbar tittle' has text 'UI Course'
+2026-02-07 12:04:34,824 | BASE_ELEMENT | INFO | Getting locator with data-testid=navigation-navbar-welcome-title-text at index 0
+2026-02-07 12:04:34,825 | BASE_ELEMENT | INFO | Checking  that text 'Welcome tittle is visible'
+2026-02-07 12:04:34,844 | BASE_ELEMENT | INFO | Getting locator with data-testid=navigation-navbar-welcome-title-text at index 0
+2026-02-07 12:04:34,844 | BASE_ELEMENT | INFO | Checking  that text 'Welcome tittle' has text 'Welcome, username!'
+2026-02-07 12:04:34,862 | BASE_ELEMENT | INFO | Getting locator with data-testid=logout-drawer-list-item-icon at index 0
+2026-02-07 12:04:34,862 | BASE_ELEMENT | INFO | Checking  that icon 'Icon is visible'
+2026-02-07 12:04:34,899 | BASE_ELEMENT | INFO | Getting locator with data-testid=logout-drawer-list-item-title-text at index 0
+2026-02-07 12:04:34,899 | BASE_ELEMENT | INFO | Checking  that text 'Tittle is visible'
+2026-02-07 12:04:34,925 | BASE_ELEMENT | INFO | Getting locator with data-testid=logout-drawer-list-item-title-text at index 0
+2026-02-07 12:04:34,925 | BASE_ELEMENT | INFO | Checking  that text 'Tittle' has text 'Logout'
+2026-02-07 12:04:34,941 | BASE_ELEMENT | INFO | Getting locator with data-testid=logout-drawer-list-item-button at index 0
+2026-02-07 12:04:34,941 | BASE_ELEMENT | INFO | Checking  that button 'Button is visible'
+2026-02-07 12:04:34,960 | BASE_ELEMENT | INFO | Getting locator with data-testid=courses-drawer-list-item-icon at index 0
+2026-02-07 12:04:34,960 | BASE_ELEMENT | INFO | Checking  that icon 'Icon is visible'
+2026-02-07 12:04:34,979 | BASE_ELEMENT | INFO | Getting locator with data-testid=courses-drawer-list-item-title-text at index 0
+2026-02-07 12:04:34,979 | BASE_ELEMENT | INFO | Checking  that text 'Tittle is visible'
+2026-02-07 12:04:35,000 | BASE_ELEMENT | INFO | Getting locator with data-testid=courses-drawer-list-item-title-text at index 0
+2026-02-07 12:04:35,000 | BASE_ELEMENT | INFO | Checking  that text 'Tittle' has text 'Courses'
+2026-02-07 12:04:35,029 | BASE_ELEMENT | INFO | Getting locator with data-testid=courses-drawer-list-item-button at index 0
+2026-02-07 12:04:35,029 | BASE_ELEMENT | INFO | Checking  that button 'Button is visible'
+2026-02-07 12:04:35,046 | BASE_ELEMENT | INFO | Getting locator with data-testid=dashboard-drawer-list-item-icon at index 0
+2026-02-07 12:04:35,046 | BASE_ELEMENT | INFO | Checking  that icon 'Icon is visible'
+2026-02-07 12:04:35,064 | BASE_ELEMENT | INFO | Getting locator with data-testid=dashboard-drawer-list-item-title-text at index 0
+2026-02-07 12:04:35,064 | BASE_ELEMENT | INFO | Checking  that text 'Tittle is visible'
+2026-02-07 12:04:35,077 | BASE_ELEMENT | INFO | Getting locator with data-testid=dashboard-drawer-list-item-title-text at index 0
+2026-02-07 12:04:35,078 | BASE_ELEMENT | INFO | Checking  that text 'Tittle' has text 'Dashboard'
+2026-02-07 12:04:35,096 | BASE_ELEMENT | INFO | Getting locator with data-testid=dashboard-drawer-list-item-button at index 0
+2026-02-07 12:04:35,096 | BASE_ELEMENT | INFO | Checking  that button 'Button is visible'
+2026-02-07 12:04:35,112 | BASE_ELEMENT | INFO | Getting locator with data-testid=logout-drawer-list-item-button at index 0
+2026-02-07 12:04:35,112 | BASE_ELEMENT | INFO | Clicking button 'Button'
+2026-02-07 12:04:35,245 | BASE_COMPONENT | INFO | Checking that current url mathes pattern ".*/#/auth/login"
+2026-02-07 12:04:35,264 | BASE_ELEMENT | INFO | Getting locator with data-testid=authentication-ui-course-title-text at index 0
+2026-02-07 12:04:35,264 | BASE_ELEMENT | INFO | Checking  that text 'Tittle' has text 'UI Course'
+2026-02-07 12:04:35,279 | BASE_ELEMENT | INFO | Getting locator with data-testid=login-form-email-input at index 0
+2026-02-07 12:04:35,279 | BASE_ELEMENT | INFO | Checking  that input 'Login input is visible'
+2026-02-07 12:04:35,288 | BASE_ELEMENT | INFO | Getting locator with data-testid=login-form-password-input at index 0
+2026-02-07 12:04:35,288 | BASE_ELEMENT | INFO | Checking  that input 'Password input is visible'
+2026-02-07 12:04:35,296 | BASE_ELEMENT | INFO | Getting locator with data-testid=login-page-login-button at index 0
+2026-02-07 12:04:35,296 | BASE_ELEMENT | INFO | Checking  that button 'Auth is visible'
+2026-02-07 12:04:35,304 | BASE_ELEMENT | INFO | Getting locator with data-testid=login-page-registration-link at index 0
+2026-02-07 12:04:35,304 | BASE_ELEMENT | INFO | Checking  that button 'Registation is visible'
+2026-02-07 12:04:35,312 | BASE_ELEMENT | INFO | Getting locator with data-testid=login-form-email-input at index 0
+2026-02-07 12:04:35,312 | INPUT | INFO | Fill 'input' 'Login input' to value 'user_mail@gmail.com'
+2026-02-07 12:04:35,340 | BASE_ELEMENT | INFO | Getting locator with data-testid=login-form-email-input at index 0
+2026-02-07 12:04:35,340 | INPUT | INFO | Checking that 'input' 'Login input' has value 'user_mail@gmail.com'
+2026-02-07 12:04:35,352 | BASE_ELEMENT | INFO | Getting locator with data-testid=login-form-password-input at index 0
+2026-02-07 12:04:35,352 | INPUT | INFO | Fill 'input' 'Password input' to value 'password123'
+2026-02-07 12:04:35,386 | BASE_ELEMENT | INFO | Getting locator with data-testid=login-form-password-input at index 0
+2026-02-07 12:04:35,386 | INPUT | INFO | Checking that 'input' 'Password input' has value 'password123'
+2026-02-07 12:04:35,394 | BASE_ELEMENT | INFO | Getting locator with data-testid=login-page-login-button at index 0
+2026-02-07 12:04:35,394 | BASE_ELEMENT | INFO | Clicking button 'Auth'
+2026-02-07 12:04:35,564 | BASE_PAGE | INFO | Checking that current url mathes pattern ".*/#/dashboard"
+2026-02-07 12:04:35,581 | BASE_ELEMENT | INFO | Getting locator with data-testid=dashboard-toolbar-title-text at index 0
+2026-02-07 12:04:35,581 | BASE_ELEMENT | INFO | Checking  that text 'Tittle is visible'
+2026-02-07 12:04:35,601 | BASE_ELEMENT | INFO | Getting locator with data-testid=dashboard-toolbar-title-text at index 0
+2026-02-07 12:04:35,601 | BASE_ELEMENT | INFO | Checking  that text 'Tittle' has text 'Dashboard'
