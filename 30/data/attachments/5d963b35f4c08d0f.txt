@@ -1,0 +1,14 @@
+2026-02-07 15:06:45,552 | BASE_PAGE | INFO | Opening the url "./#/auth/login"
+2026-02-07 15:06:47,467 | BASE_ELEMENT | INFO | Getting locator with data-testid=login-page-registration-link at index 0
+2026-02-07 15:06:47,467 | BASE_ELEMENT | INFO | Clicking button 'Registation'
+2026-02-07 15:06:47,580 | BASE_PAGE | INFO | Checking that current url mathes pattern ".*/#/auth/registration"
+2026-02-07 15:06:47,605 | BASE_ELEMENT | INFO | Getting locator with data-testid=authentication-ui-course-title-text at index 0
+2026-02-07 15:06:47,605 | BASE_ELEMENT | INFO | Checking  that text 'Tittle' has text 'UI Course'
+2026-02-07 15:06:47,618 | BASE_ELEMENT | INFO | Getting locator with data-testid=registration-form-username-input at index 0
+2026-02-07 15:06:47,618 | BASE_ELEMENT | INFO | Checking  that input 'Login input is visible'
+2026-02-07 15:06:47,628 | BASE_ELEMENT | INFO | Getting locator with data-testid=registration-form-password-input at index 0
+2026-02-07 15:06:47,629 | BASE_ELEMENT | INFO | Checking  that input 'Password input is visible'
+2026-02-07 15:06:47,640 | BASE_ELEMENT | INFO | Getting locator with data-testid=registration-page-registration-button at index 0
+2026-02-07 15:06:47,640 | BASE_ELEMENT | INFO | Checking  that button 'Registration is visible'
+2026-02-07 15:06:47,652 | BASE_ELEMENT | INFO | Getting locator with data-testid=registration-page-login-link at index 0
+2026-02-07 15:06:47,652 | BASE_ELEMENT | INFO | Checking  that button 'Login is visible'

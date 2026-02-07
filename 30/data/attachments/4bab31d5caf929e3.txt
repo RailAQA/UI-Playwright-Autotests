@@ -1,0 +1,15 @@
+2026-02-07 15:06:28,102 | BASE_PAGE | INFO | Opening the url "./#/auth/login"
+2026-02-07 15:06:29,707 | BASE_ELEMENT | INFO | Getting locator with data-testid=login-form-email-input at index 0
+2026-02-07 15:06:29,708 | INPUT | INFO | Fill 'input' 'Login input' to value 'user.name@mail.ru'
+2026-02-07 15:06:29,769 | BASE_ELEMENT | INFO | Getting locator with data-testid=login-form-email-input at index 0
+2026-02-07 15:06:29,769 | INPUT | INFO | Checking that 'input' 'Login input' has value 'user.name@mail.ru'
+2026-02-07 15:06:29,788 | BASE_ELEMENT | INFO | Getting locator with data-testid=login-form-password-input at index 0
+2026-02-07 15:06:29,789 | INPUT | INFO | Fill 'input' 'Password input' to value 'password'
+2026-02-07 15:06:29,877 | BASE_ELEMENT | INFO | Getting locator with data-testid=login-form-password-input at index 0
+2026-02-07 15:06:29,877 | INPUT | INFO | Checking that 'input' 'Password input' has value 'password'
+2026-02-07 15:06:29,901 | BASE_ELEMENT | INFO | Getting locator with data-testid=login-page-login-button at index 0
+2026-02-07 15:06:29,901 | BASE_ELEMENT | INFO | Clicking button 'Auth'
+2026-02-07 15:06:30,022 | BASE_ELEMENT | INFO | Getting locator with data-testid=login-page-wrong-email-or-password-alert at index 0
+2026-02-07 15:06:30,023 | BASE_ELEMENT | INFO | Checking  that text 'Alert is visible'
+2026-02-07 15:06:30,035 | BASE_ELEMENT | INFO | Getting locator with data-testid=login-page-wrong-email-or-password-alert at index 0
+2026-02-07 15:06:30,035 | BASE_ELEMENT | INFO | Checking  that text 'Alert' has text 'Wrong email or password'
