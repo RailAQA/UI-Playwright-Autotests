@@ -40,7 +40,7 @@ jobs:
           path: gh-pages
 
       - name: Allure Report action fro marketplace
-        uses: simple-elf/allure-report-action@v1.13
+        uses: simple-elf/allure-report-action@v1.7
         if: always()
         continue-on-error: true
         with:
