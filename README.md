@@ -58,7 +58,7 @@ playwright install
 To run the tests and generate an Allure report, use the following command:
 
 ```bash
-pytest -m "regression" --alluredir=./allure-results
+pytest -s -v --alluredir=./allure-results
 ```
 
 This will execute all tests in the project and display the results in the terminal.
