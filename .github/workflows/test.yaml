@@ -21,7 +21,7 @@ jobs:
         with:
           python-version: '3.10'
 
-      - name: instal requirements
+      - name: install requirements
         run: |
           pip install --upgrade pip
           pip install -r requirements.txt
