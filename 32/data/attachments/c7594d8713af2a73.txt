@@ -1,0 +1,20 @@
+2026-02-15 12:58:17,597 | BASE_PAGE | INFO | Opening the url "./#/auth/registration"
+2026-02-15 12:58:19,160 | BASE_ELEMENT | INFO | Getting locator with data-testid=registration-form-email-input at index 0
+2026-02-15 12:58:19,160 | INPUT | INFO | Fill 'input' 'Email' to value 'pochta_random@gmail.com'
+2026-02-15 12:58:19,236 | BASE_ELEMENT | INFO | Getting locator with data-testid=registration-form-email-input at index 0
+2026-02-15 12:58:19,236 | INPUT | INFO | Checking that 'input' 'Email' has value 'pochta_random@gmail.com'
+2026-02-15 12:58:19,251 | BASE_ELEMENT | INFO | Getting locator with data-testid=registration-form-username-input at index 0
+2026-02-15 12:58:19,252 | INPUT | INFO | Fill 'input' 'Login input' to value 'Rail'
+2026-02-15 12:58:19,319 | BASE_ELEMENT | INFO | Getting locator with data-testid=registration-form-username-input at index 0
+2026-02-15 12:58:19,319 | INPUT | INFO | Checking that 'input' 'Login input' has value 'Rail'
+2026-02-15 12:58:19,332 | BASE_ELEMENT | INFO | Getting locator with data-testid=registration-form-password-input at index 0
+2026-02-15 12:58:19,332 | INPUT | INFO | Fill 'input' 'Password input' to value 'password'
+2026-02-15 12:58:19,373 | BASE_ELEMENT | INFO | Getting locator with data-testid=registration-form-password-input at index 0
+2026-02-15 12:58:19,374 | INPUT | INFO | Checking that 'input' 'Password input' has value 'password'
+2026-02-15 12:58:19,383 | BASE_ELEMENT | INFO | Getting locator with data-testid=registration-page-registration-button at index 0
+2026-02-15 12:58:19,384 | BASE_ELEMENT | INFO | Clicking button 'Registration'
+2026-02-15 12:58:19,485 | BASE_COMPONENT | INFO | Checking that current url mathes pattern ".*/#/dashboard"
+2026-02-15 12:58:19,498 | BASE_ELEMENT | INFO | Getting locator with data-testid=dashboard-toolbar-title-text at index 0
+2026-02-15 12:58:19,498 | BASE_ELEMENT | INFO | Checking  that text 'Tittle is visible'
+2026-02-15 12:58:19,646 | BASE_ELEMENT | INFO | Getting locator with data-testid=dashboard-toolbar-title-text at index 0
+2026-02-15 12:58:19,647 | BASE_ELEMENT | INFO | Checking  that text 'Tittle' has text 'Dashboard'
