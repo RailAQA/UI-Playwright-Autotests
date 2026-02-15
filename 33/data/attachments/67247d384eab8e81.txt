@@ -1,0 +1,93 @@
+2026-02-15 12:59:16,242 | BASE_PAGE | INFO | Opening the url "./#/courses/create"
+2026-02-15 12:59:17,195 | BASE_ELEMENT | INFO | Getting locator with data-testid=create-course-preview-image-upload-widget-input at index 0
+2026-02-15 12:59:17,195 | FILE_INPUT | INFO | Set file './testdata/files/main.jpg' to the 'file input' 'Upload image'
+2026-02-15 12:59:17,539 | BASE_ELEMENT | INFO | Getting locator with data-testid=create-course-form-title-input at index 0
+2026-02-15 12:59:17,539 | INPUT | INFO | Fill 'input' 'Input' to value 'Лучший тайтл'
+2026-02-15 12:59:17,611 | BASE_ELEMENT | INFO | Getting locator with data-testid=create-course-form-title-input at index 0
+2026-02-15 12:59:17,611 | INPUT | INFO | Checking that 'input' 'Input' has value 'Лучший тайтл'
+2026-02-15 12:59:17,631 | BASE_ELEMENT | INFO | Getting locator with data-testid=create-course-form-estimated-time-input at index 0
+2026-02-15 12:59:17,631 | INPUT | INFO | Fill 'input' 'Input' to value '2 weeks'
+2026-02-15 12:59:17,710 | BASE_ELEMENT | INFO | Getting locator with data-testid=create-course-form-estimated-time-input at index 0
+2026-02-15 12:59:17,710 | INPUT | INFO | Checking that 'input' 'Input' has value '2 weeks'
+2026-02-15 12:59:17,731 | BASE_ELEMENT | INFO | Getting locator with data-testid=create-course-form-description-input at index 0
+2026-02-15 12:59:17,732 | TEXTAREA | INFO | Fill 'textarea' 'Textarea' to value 'По щучьему велению, по моему хотению'
+2026-02-15 12:59:17,817 | BASE_ELEMENT | INFO | Getting locator with data-testid=create-course-form-description-input at index 0
+2026-02-15 12:59:17,817 | TEXTAREA | INFO | Checking that 'textarea' 'Textarea' has value 'По щучьему велению, по моему хотению'
+2026-02-15 12:59:17,838 | BASE_ELEMENT | INFO | Getting locator with data-testid=create-course-form-max-score-input at index 0
+2026-02-15 12:59:17,838 | INPUT | INFO | Fill 'input' 'Input' to value '25'
+2026-02-15 12:59:17,900 | BASE_ELEMENT | INFO | Getting locator with data-testid=create-course-form-max-score-input at index 0
+2026-02-15 12:59:17,901 | INPUT | INFO | Checking that 'input' 'Input' has value '25'
+2026-02-15 12:59:17,920 | BASE_ELEMENT | INFO | Getting locator with data-testid=create-course-form-min-score-input at index 0
+2026-02-15 12:59:17,920 | INPUT | INFO | Fill 'input' 'Input' to value '5'
+2026-02-15 12:59:17,970 | BASE_ELEMENT | INFO | Getting locator with data-testid=create-course-form-min-score-input at index 0
+2026-02-15 12:59:17,971 | INPUT | INFO | Checking that 'input' 'Input' has value '5'
+2026-02-15 12:59:17,979 | BASE_ELEMENT | INFO | Getting locator with data-testid=create-course-toolbar-create-course-button at index 0
+2026-02-15 12:59:17,980 | BASE_ELEMENT | INFO | Clicking button 'Create button'
+2026-02-15 12:59:18,076 | BASE_COMPONENT | INFO | Checking that current url mathes pattern ".*/#/courses"
+2026-02-15 12:59:18,131 | BASE_ELEMENT | INFO | Getting locator with data-testid=course-view-menu-button at index 0
+2026-02-15 12:59:18,131 | BASE_ELEMENT | INFO | Clicking button 'Menu'
+2026-02-15 12:59:18,212 | BASE_ELEMENT | INFO | Getting locator with data-testid=course-view-edit-menu-item at index 0
+2026-02-15 12:59:18,212 | BASE_ELEMENT | INFO | Checking  that button 'Edit course is visible'
+2026-02-15 12:59:18,227 | BASE_ELEMENT | INFO | Getting locator with data-testid=course-view-edit-menu-item at index 0
+2026-02-15 12:59:18,227 | BASE_ELEMENT | INFO | Clicking button 'Edit course'
+2026-02-15 12:59:18,571 | BASE_ELEMENT | INFO | Getting locator with data-testid=create-course-form-title-input at index 0
+2026-02-15 12:59:18,571 | BASE_ELEMENT | INFO | Checking  that input 'Input is visible'
+2026-02-15 12:59:18,593 | BASE_ELEMENT | INFO | Getting locator with data-testid=create-course-form-title-input at index 0
+2026-02-15 12:59:18,593 | INPUT | INFO | Checking that 'input' 'Input' has value 'Лучший тайтл'
+2026-02-15 12:59:18,606 | BASE_ELEMENT | INFO | Getting locator with data-testid=create-course-form-estimated-time-input at index 0
+2026-02-15 12:59:18,606 | BASE_ELEMENT | INFO | Checking  that input 'Input is visible'
+2026-02-15 12:59:18,620 | BASE_ELEMENT | INFO | Getting locator with data-testid=create-course-form-estimated-time-input at index 0
+2026-02-15 12:59:18,620 | INPUT | INFO | Checking that 'input' 'Input' has value '2 weeks'
+2026-02-15 12:59:18,633 | BASE_ELEMENT | INFO | Getting locator with data-testid=create-course-form-description-input at index 0
+2026-02-15 12:59:18,633 | TEXTAREA | INFO | Checking that 'textarea' 'Textarea' is visible
+2026-02-15 12:59:18,647 | BASE_ELEMENT | INFO | Getting locator with data-testid=create-course-form-description-input at index 0
+2026-02-15 12:59:18,648 | TEXTAREA | INFO | Checking that 'textarea' 'Textarea' has value 'По щучьему велению, по моему хотению'
+2026-02-15 12:59:18,662 | BASE_ELEMENT | INFO | Getting locator with data-testid=create-course-form-max-score-input at index 0
+2026-02-15 12:59:18,662 | BASE_ELEMENT | INFO | Checking  that input 'Input is visible'
+2026-02-15 12:59:18,679 | BASE_ELEMENT | INFO | Getting locator with data-testid=create-course-form-max-score-input at index 0
+2026-02-15 12:59:18,680 | INPUT | INFO | Checking that 'input' 'Input' has value '25'
+2026-02-15 12:59:18,696 | BASE_ELEMENT | INFO | Getting locator with data-testid=create-course-form-min-score-input at index 0
+2026-02-15 12:59:18,696 | BASE_ELEMENT | INFO | Checking  that input 'Input is visible'
+2026-02-15 12:59:18,721 | BASE_ELEMENT | INFO | Getting locator with data-testid=create-course-form-min-score-input at index 0
+2026-02-15 12:59:18,721 | INPUT | INFO | Checking that 'input' 'Input' has value '5'
+2026-02-15 12:59:18,734 | BASE_ELEMENT | INFO | Getting locator with data-testid=create-course-form-title-input at index 0
+2026-02-15 12:59:18,734 | INPUT | INFO | Fill 'input' 'Input' to value 'Новый тайтл'
+2026-02-15 12:59:18,788 | BASE_ELEMENT | INFO | Getting locator with data-testid=create-course-form-title-input at index 0
+2026-02-15 12:59:18,788 | INPUT | INFO | Checking that 'input' 'Input' has value 'Новый тайтл'
+2026-02-15 12:59:18,818 | BASE_ELEMENT | INFO | Getting locator with data-testid=create-course-form-estimated-time-input at index 0
+2026-02-15 12:59:18,818 | INPUT | INFO | Fill 'input' 'Input' to value '1 day'
+2026-02-15 12:59:18,867 | BASE_ELEMENT | INFO | Getting locator with data-testid=create-course-form-estimated-time-input at index 0
+2026-02-15 12:59:18,867 | INPUT | INFO | Checking that 'input' 'Input' has value '1 day'
+2026-02-15 12:59:18,877 | BASE_ELEMENT | INFO | Getting locator with data-testid=create-course-form-description-input at index 0
+2026-02-15 12:59:18,878 | TEXTAREA | INFO | Fill 'textarea' 'Textarea' to value 'лень придумывать'
+2026-02-15 12:59:18,914 | BASE_ELEMENT | INFO | Getting locator with data-testid=create-course-form-description-input at index 0
+2026-02-15 12:59:18,915 | TEXTAREA | INFO | Checking that 'textarea' 'Textarea' has value 'лень придумывать'
+2026-02-15 12:59:18,925 | BASE_ELEMENT | INFO | Getting locator with data-testid=create-course-form-max-score-input at index 0
+2026-02-15 12:59:18,925 | INPUT | INFO | Fill 'input' 'Input' to value '100'
+2026-02-15 12:59:18,961 | BASE_ELEMENT | INFO | Getting locator with data-testid=create-course-form-max-score-input at index 0
+2026-02-15 12:59:18,961 | INPUT | INFO | Checking that 'input' 'Input' has value '100'
+2026-02-15 12:59:18,971 | BASE_ELEMENT | INFO | Getting locator with data-testid=create-course-form-min-score-input at index 0
+2026-02-15 12:59:18,972 | INPUT | INFO | Fill 'input' 'Input' to value '40'
+2026-02-15 12:59:19,006 | BASE_ELEMENT | INFO | Getting locator with data-testid=create-course-form-min-score-input at index 0
+2026-02-15 12:59:19,006 | INPUT | INFO | Checking that 'input' 'Input' has value '40'
+2026-02-15 12:59:19,017 | BASE_ELEMENT | INFO | Getting locator with data-testid=create-course-toolbar-create-course-button at index 0
+2026-02-15 12:59:19,017 | BASE_ELEMENT | INFO | Clicking button 'Create button'
+2026-02-15 12:59:19,115 | BASE_COMPONENT | INFO | Checking that current url mathes pattern ".*/#/courses"
+2026-02-15 12:59:19,127 | BASE_ELEMENT | INFO | Getting locator with data-testid=course-widget-title-text at index 0
+2026-02-15 12:59:19,127 | BASE_ELEMENT | INFO | Checking  that text 'Tittle is visible'
+2026-02-15 12:59:19,136 | BASE_ELEMENT | INFO | Getting locator with data-testid=course-widget-title-text at index 0
+2026-02-15 12:59:19,136 | BASE_ELEMENT | INFO | Checking  that text 'Tittle' has text 'Новый тайтл'
+2026-02-15 12:59:19,145 | BASE_ELEMENT | INFO | Getting locator with data-testid=course-preview-image at index 0
+2026-02-15 12:59:19,145 | BASE_ELEMENT | INFO | Checking  that image 'Image is visible'
+2026-02-15 12:59:19,158 | BASE_ELEMENT | INFO | Getting locator with data-testid=course-max-score-info-row-view-text at index 0
+2026-02-15 12:59:19,159 | BASE_ELEMENT | INFO | Checking  that text 'Max_score is visible'
+2026-02-15 12:59:19,167 | BASE_ELEMENT | INFO | Getting locator with data-testid=course-max-score-info-row-view-text at index 0
+2026-02-15 12:59:19,167 | BASE_ELEMENT | INFO | Checking  that text 'Max_score' has text 'Max score: 100'
+2026-02-15 12:59:19,176 | BASE_ELEMENT | INFO | Getting locator with data-testid=course-min-score-info-row-view-text at index 0
+2026-02-15 12:59:19,177 | BASE_ELEMENT | INFO | Checking  that text 'Min_score is visible'
+2026-02-15 12:59:19,185 | BASE_ELEMENT | INFO | Getting locator with data-testid=course-min-score-info-row-view-text at index 0
+2026-02-15 12:59:19,185 | BASE_ELEMENT | INFO | Checking  that text 'Min_score' has text 'Min score: 40'
+2026-02-15 12:59:19,193 | BASE_ELEMENT | INFO | Getting locator with data-testid=course-estimated-time-info-row-view-text at index 0
+2026-02-15 12:59:19,193 | BASE_ELEMENT | INFO | Checking  that text 'Estimated_time is visible'
+2026-02-15 12:59:19,201 | BASE_ELEMENT | INFO | Getting locator with data-testid=course-estimated-time-info-row-view-text at index 0
+2026-02-15 12:59:19,201 | BASE_ELEMENT | INFO | Checking  that text 'Estimated_time' has text 'Estimated time: 1 day'
